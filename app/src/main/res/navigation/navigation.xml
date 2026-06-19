@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homePageFragment">
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.auto.pooling.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" /><action android:id="@+id/action_global_homePageFragment" app:destination="@id/homePageFragment"/>
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.auto.pooling.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" /><action android:id="@+id/action_global_profilePageFragment" app:destination="@id/profilePageFragment"/>
+    <fragment
+        android:id="@+id/bookingsFragment"
+        android:name="com.auto.pooling.BookingsFragment"
+        android:label="fragment_bookings"
+        tools:layout="@layout/fragment_bookings" /><action android:id="@+id/action_global_bookingsFragment" app:destination="@id/bookingsFragment"/>
+    <fragment
+        android:id="@+id/createPoolingFragment"
+        android:name="com.auto.pooling.CreatePoolingFragment"
+        android:label="fragment_create_pooling"
+        tools:layout="@layout/fragment_create_pooling" /><action android:id="@+id/action_global_createPoolingFragment" app:destination="@id/createPoolingFragment"/>
+</navigation>

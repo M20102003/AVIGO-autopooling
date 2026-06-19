@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="32dp"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SuccessPage">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Booking Successful"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="10dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="10dp"
+                android:background="@drawable/dot_bg"
+                android:layout_height="10dp"/>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="0dp"
+                android:background="@color/primary"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Booking Successful"
+            android:id="@+id/leavingFromTxt"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="10dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="0dp"
+                android:background="@color/primary"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:layout_width="10dp"
+                android:background="@drawable/dot_bg"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Booking Successful"
+            android:id="@+id/goingToTxt"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/input_stroke"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="HOME"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

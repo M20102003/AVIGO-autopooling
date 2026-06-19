@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:font="@font/montserratmedium"/>
+
+    <font
+        android:font="@font/montserratblackitalic"/>
+
+    <font
+        android:font="@font/montserratblack"/>
+
+    <font
+        android:font="@font/montserratbold"/>
+
+    <font
+        android:font="@font/montserratbolditalic"/>
+
+    <font
+        android:font="@font/montserratextrabold"/>
+
+    <font
+        android:font="@font/montserratextralight"/>
+
+    <font
+        android:font="@font/montserratextralightitalic"/>
+
+    <font
+        android:font="@font/montserratextrabolditalic"/>
+
+    <font
+        android:font="@font/montserratitalic"/>
+
+    <font
+        android:font="@font/montserratlight"/>
+
+    <font
+        android:font="@font/montserratlightitalic"/>
+
+    <font
+        android:font="@font/montserratmediumitalic"/>
+
+    <font
+        android:font="@font/montserratregular"/>
+
+    <font
+        android:font="@font/montserratsemibold"/>
+
+    <font
+        android:font="@font/montserratsemibolditalic"/>
+
+    <font
+        android:font="@font/montserratthin"/>
+
+    <font
+        android:font="@font/montserratthinitalic"/>
+
+</font-family>

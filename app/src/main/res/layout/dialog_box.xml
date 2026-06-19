@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:text="You Are?"/>
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/cancelBtn"-->
+<!--            android:background="@drawable/outline_cancel_24"/>-->
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/userRadio"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User" />
+
+        <RadioButton
+            android:id="@+id/drierRadio"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_height="wrap_content"
+            android:text="Driver" />
+    </RadioGroup>
+    <android.widget.Button
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Confirm"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserratsemibold"
+        android:background="@drawable/google_bg"
+        android:backgroundTint="@color/primary"
+        android:id="@+id/confirmBtn"/>
+
+</LinearLayout>

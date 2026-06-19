@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".CreateBookingActivity">
+
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/backBtn"
+            android:src="@drawable/baseline_chevron_left_24" />
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratextrabold"
+            android:text="Booking Details"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Driver Details"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+                <TextView
+                    android:visibility="gone"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Canceled"
+                    android:id="@+id/canceledView"
+                    android:textColor="#FA0707"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    app:cardCornerRadius="500dp"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:background="@drawable/circular_bg"
+                        android:id="@+id/autoDriverImage"
+                        android:src="@drawable/example_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/autoDriverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:text="@string/vinay"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginHorizontal="10dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="10dp"-->
+<!--                            android:layout_height="10dp"-->
+<!--                            android:src="@drawable/baseline_star_border_24" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/rating"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="bottom"-->
+<!--                            android:fontFamily="@font/montserratregular"-->
+<!--                            android:text="4.5"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="14dp" />-->
+<!--                    </LinearLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/userDetailsView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="User Details"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        app:cardCornerRadius="500dp"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:background="@drawable/circular_bg"
+                            android:id="@+id/userImage"
+                            android:src="@drawable/example_image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/montserratsemibold"
+                            android:text="@string/vinay"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="10dp"-->
+                        <!--                        android:layout_marginTop="5dp"-->
+                        <!--                        android:gravity="center_vertical"-->
+                        <!--                        android:orientation="horizontal">-->
+
+                        <!--                        <ImageView-->
+                        <!--                            android:layout_width="10dp"-->
+                        <!--                            android:layout_height="10dp"-->
+                        <!--                            android:src="@drawable/baseline_star_border_24" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/rating"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_gravity="bottom"-->
+                        <!--                            android:fontFamily="@font/montserratregular"-->
+                        <!--                            android:text="4.5"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="14dp" />-->
+                        <!--                    </LinearLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="Travel Details"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="3:30 Pm"
+                        android:id="@+id/startTime"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <LinearLayout
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="0dp"
+                            android:background="@color/white"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:background="@drawable/dot_bg"
+                            android:layout_height="10dp"/>
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="0dp"
+                            android:background="@color/primary"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="askjfc"
+                        android:id="@+id/leavingFromTxt"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="3:30"
+                        android:id="@+id/endTime"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <LinearLayout
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="0dp"
+                            android:background="@color/primary"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:background="@drawable/dot_bg"
+                            android:layout_height="10dp"/>
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="0dp"
+                            android:background="@color/white"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="asc"
+                        android:id="@+id/goingToTxt"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Booking Date"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/bookingDateAndTimeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="12/03/2020"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="@string/price"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/priceTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="₹500"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="@string/selected_seats"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seatRecyclerList"
+                android:orientation="horizontal"
+                android:isScrollContainer="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/cancelBookingView"
+        android:layout_marginVertical="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ProgressBar
+            android:indeterminateTint="@color/primary"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/cancelProgressBar"/>
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/google_bg"
+            android:backgroundTint="#F62424"
+            android:fontFamily="@font/montserratbold"
+            android:id="@+id/cancelBookingBtn"
+            android:text="Cancel Booking"/>
+    </FrameLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/confirmButtonView"
+        android:layout_marginVertical="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ProgressBar
+            android:indeterminateTint="@color/primary"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"/>
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/google_bg"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/montserratbold"
+            android:id="@+id/confirmBookingBtn"
+            android:text="Confirm Booking"/>
+    </FrameLayout>
+</LinearLayout>

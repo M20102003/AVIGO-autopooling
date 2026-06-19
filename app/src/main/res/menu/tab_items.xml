@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/homePageFragment"
+        android:icon="@drawable/outline_home_24"/>
+    <item android:title="Add Pooling"
+        android:id="@+id/createPoolingFragment"
+        android:icon="@drawable/outline_library_add_24"/>
+    <item android:title="Bookings"
+        android:id="@+id/bookingsFragment"
+        android:icon="@drawable/baseline_filter_list_24"/>
+    <item android:title="Profile"
+        android:id="@+id/profilePageFragment"
+        android:icon="@drawable/outline_person_outline_24"/>
+</menu>

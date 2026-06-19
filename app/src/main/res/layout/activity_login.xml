@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserratbold"
+        android:text="AutoPool\nTransportation Made Easy"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/driver" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/displayTxt"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Sign In With Email And Password"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+    <EditText
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:hint="Enter Email"
+        android:textSize="14sp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:id="@+id/emailEdtTxt"
+        android:textColor="@color/black" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@font/montserratsemibold"
+        android:hint="Enter Password"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:id="@+id/passwordEdtTxt"
+        android:textColor="@color/black" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/signInProgressBar"
+            android:indeterminateTint="@color/primary"
+            android:layout_gravity="center"/>
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signInBtn"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/google_bg"
+            android:backgroundTint="@color/primary"
+            android:text="Sign In"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Or Sign Up Using"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/signUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratbold"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:backgroundTint="@color/gray"/>
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratbold"
+            android:text="Or"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@drawable/white_bg"
+            android:backgroundTint="@color/gray"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/googleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/google_bg"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/google" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Sign in with Google"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:indeterminateTint="@color/primary"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+
+
+</LinearLayout>

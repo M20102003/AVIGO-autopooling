@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310427835343",
+    "project_id": "rikshawpooling",
+    "storage_bucket": "rikshawpooling.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310427835343:android:de6d7c9688bcf6335290ba",
+        "android_client_info": {
+          "package_name": "com.auto.pooling"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpjl7ttvOqOBRA0Z5x2xvBHVo7E5vpK6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
